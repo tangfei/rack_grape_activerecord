@@ -1,4 +1,3 @@
-require 'active_record'
 require './models/product'
 module BayeApi
   module V1

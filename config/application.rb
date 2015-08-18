@@ -8,7 +8,7 @@ Bundler.require :default, ENV['RACK_ENV']
 # Dir[File.expand_path('../../api/*.rb', __FILE__)].each do |f|
 #   require f
 # end
-require 'sinatra'
+
 require 'active_record'
 require 'logger'
 dbconfig = YAML::load(File.open('./config/database.yml'))

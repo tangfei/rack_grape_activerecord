@@ -3,15 +3,13 @@ source 'https://ruby.taobao.org'
 
 gem 'rack', '>= 1.6.4'
 gem 'grape', '>= 0.13.0'
+# 格式控制 https://github.com/ruby-grape/grape-entity
 gem 'grape-entity'
 gem 'json'
-gem 'newrelic_rpm'
-gem 'rack-cors'
+# 生成api文档 https://github.com/tim-vandecasteele/grape-swagger
 gem 'grape-swagger'
-gem 'mime-types'
-gem 'nokogiri'
+
 gem 'mysql2'
-gem 'sinatra'
 gem "activerecord"
 
 group :development, :test do

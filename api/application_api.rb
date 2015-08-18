@@ -3,7 +3,6 @@ require 'active_record'
 
 module BayeApi
   class ApplicationAPI < Grape::API
-
     format :json
 
     mount V1::Base
