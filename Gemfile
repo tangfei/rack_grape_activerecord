@@ -10,7 +10,9 @@ gem 'rack-cors'
 gem 'grape-swagger'
 gem 'mime-types'
 gem 'nokogiri'
-
+gem 'mysql2'
+gem 'sinatra'
+gem "activerecord"
 
 group :development, :test do
   gem 'rspec'
