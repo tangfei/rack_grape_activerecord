@@ -10,7 +10,6 @@ Bundler.require :default, ENV['RACK_ENV']
 # end
 
 require 'active_record'
-require 'logger'
 dbconfig = YAML::load(File.open('./config/database.yml'))
 ActiveRecord::Base.establish_connection(dbconfig['development'])
 
