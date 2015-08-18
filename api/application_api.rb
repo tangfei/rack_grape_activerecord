@@ -1,4 +1,5 @@
 require 'v1/base'
+require 'active_record'
 
 module BayeApi
   class ApplicationAPI < Grape::API

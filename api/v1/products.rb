@@ -1,14 +1,17 @@
+require 'active_record'
+require './models/product'
 module BayeApi
   module V1
     class Products < Grape::API
-      get 'hello' do
-        {hello: 'worldqq'}
-      end
 
       get 'products' do
          Product.order('id desc')
       end
-    end
 
+      get 'products/:id' do
+         Product.find(params[:id])
+      end
+
+    end
   end
 end
